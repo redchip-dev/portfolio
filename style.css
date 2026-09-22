@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  background: #f7f7f5;
+  color: #111;
+}
+
+
+/* Header */
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+}
+
+
+/* Hero */
+
+.hero {
+  min-height: 650px;
+  padding: 130px 8%;
+}
+
+.eyebrow {
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: 600;
+  margin: 0;
+  max-width: 1000px;
+}
+
+.hero-text {
+  margin-top: 40px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* Sections */
+
+.section {
+  padding: 120px 8%;
+  border-top: 1px solid #ddd;
+}
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  font-size: 42px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.description {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+}
+
+
+/* Projects */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 36px;
+  min-height: 260px;
+  border: 1px solid #ddd;
+}
+
+.project-card span {
+  font-size: 12px;
+  color: #777;
+}
+
+.project-card h3 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+.project-card p {
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666;
+}
+
+
+/* Contact */
+
+.contact {
+  min-height: 400px;
+}
+
+.contact h2 {
+  font-size: 48px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 100px 6%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .section {
+    padding: 80px 6%;
+  }
+
+  .section h2 {
+    font-size: 32px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
